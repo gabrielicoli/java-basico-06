@@ -18,8 +18,11 @@ public class Main {
         for (String iteracao : array) {        	
         	
         	System.out.println("Nome do carro: "+iteracao);
+        	System.out.println("\n----------------------\n");
 		}
-        System.out.println("\n----------------------\n");
+        
+        
+        
         for (String iteracao : array) {
         	array[1] = "L200";
             System.out.println("Nome do carro: "+iteracao);
