@@ -27,7 +27,10 @@ public class Main {
         	array[1] = "L200";
             System.out.println("Nome do carro: "+iteracao);
 		}
-        
+        for (String iteracao: array) {
+			array[array.length-1]="gol";
+			System.out.println(iteracao);
+		}
         
 	}
 
