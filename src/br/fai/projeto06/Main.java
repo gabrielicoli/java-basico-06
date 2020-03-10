@@ -8,6 +8,8 @@ public class Main {
 	}
 
 	private void start() {
+		//String[]carros = {"civic", "gol", "palio", "uno"}; o professor declarou assim
+							//0,       1,     2,       3
 	String array[] = new String[4];
         
         array[0] = "civic";
@@ -22,16 +24,32 @@ public class Main {
 		}
         
         System.out.println("\n----------------------\n");
-        
+        array[1] = "L200";
         for (String iteracao : array) {
-        	array[1] = "L200";
+        	
             System.out.println("Nome do carro: "+iteracao);
 		}
-        for (String iteracao: array) {
-			array[array.length-1]="gol";
-			System.out.println(iteracao);
-		}
         
-	}
+        System.out.println("\n----------------------\n");
+        
+       int tamanhoNovoArray = array.length+1;
+       String[] novoArray=
+    		   new String[tamanhoNovoArray];
+       int j=0;
+       while (j < array.length) {
+           String iteracao = array[j];
+           novoArray[j] = iteracao;
+           j++;
+       }
+       
+       novoArray[tamanhoNovoArray - 1] = "Gol";
+       for (String iteracao : novoArray) {
+
+           System.out.println("Nome do carro: " + iteracao);
+       }
+
+
+	  }        
+	
 
 }
